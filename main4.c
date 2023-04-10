@@ -12,13 +12,13 @@ int main()
 
     for (i = 0; i < processes; i++)
     {
-        int max_partition = -1;
+        int min_partition = 1000;
         maxProcessNum = -1;
         for (j = 0; j < 12; j++)
         {
-            if (partition[j] >= processCount[i] && partition[j] > max_partition && partitionUsed[j] != 1)
+            if (partition[j] >= processCount[i] && partition[j] < min_partition && partitionUsed[j] != 1)
             {
-                max_partition = partition[j];
+                min_partition = partition[j];
                 maxProcessNum = j;
             }
         }
