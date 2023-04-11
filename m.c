@@ -32,7 +32,7 @@ int main()
         scanf("%d", &process_size[i]);
     }
 
-    // Perform best fit allocation
+    // Perform best fit allocati
     for (int i = 0; i < process; i++)
     {
         int min_p = 1000;
